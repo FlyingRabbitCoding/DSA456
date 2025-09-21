@@ -46,3 +46,16 @@ def sum_to_goal(num:list[int], goal:int)->int:
                 return num[i] * num[j]
     return 0
 
+
+# Part B Reflection:
+# Write about your experience programming in Python for this lab. Your reflection should include comments on the following:
+
+# What did you like/not like about Python
+# answer: easier to code, but need to more focus on syntax
+
+# Was there anything that behaved differently than you expected in Python?
+# answer: i thought it is the same as object oriented programming language needs to define the properties
+
+# Based on what you wrote in your lab, write something about the similarities and differences between Python and C/C++ and how that affects how you write your program.
+# answer: python is easier to write, and the code is shorter. but the basic concept is similar with C/C++. if the fundamental of c/c++ is strong.
+# python is easy to learn.
