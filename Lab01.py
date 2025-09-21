@@ -37,3 +37,12 @@ def fibonacci(n: int) -> int:
         a, b = b, a + b
 
     return b
+
+# question 4
+def sum_to_goal(num:list[int], goal:int)->int:
+    for i in range(len(num)):
+        for j in range(i+1,len(num)):
+            if num[i]+num[j] == goal:
+                return num[i] * num[j]
+    return 0
+
