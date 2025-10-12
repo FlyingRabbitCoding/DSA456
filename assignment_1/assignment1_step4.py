@@ -91,7 +91,7 @@ bubble_times = []
 selection_times = []
 insertion_times = []
 quick_times = []
-insertion1_time = []
+insertion1_times = []
 
 for size in sizes:
     test_list = list(range(size, 0, -1))
@@ -125,11 +125,11 @@ for size in sizes:
     quick_times.append(end - start)
 
     #   insertion_sort_lr
-    variable_list_copy = copy.deepcopy(test_list)
-    start = time.time()
-    bubble_sort(variable_list_copy)
-    end = time.time()
-    insertion1_time.append(end - start)
+    # variable_list_copy = copy.deepcopy(test_list)
+    # start = time.time()
+    # insertion_sort_lr(variable_list_copy)
+    # end = time.time()
+    # insertion1_times.append(end - start)
 
 
 print("list size:", sizes)
@@ -137,3 +137,4 @@ print("bubble sort time: ", bubble_times)
 print("selection sort: ", selection_times)
 print("insertion sort: ", insertion_times)
 print("quick sort: ", quick_times)
+# print("insertion_sort_lr: ", insertion1_times)
