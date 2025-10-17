@@ -1,0 +1,40 @@
+Part A: Questions about the video
+Do not forget to add all group members' names (and email addresses) to the top of the file if you are working in a group.
+1.	What sorting algorithm was the speaker trying to improve?
+Answer: heapsort
+2.	At what partition size does VS perform a simpler sort algorithm instead of continuing to partition?
+Answer: 32
+3.	At what partition size does GNU perform a simpler sort algorithm instead of continuing to partition?
+Answer: 16
+4.	Regular insertion sort does a linear search backwards from end of array for correct spot to insert. According to the speaker, why does switching to a binary search not improve performance?
+Answer: binary search sort is always slower than optimistic linear insertion sort. Binary searches have maximum entropy, each extract 1 bit of information, average success: R(n) = 50%
+5.	Describe what is meant by branch prediction. (this may require further research)
+Answer: branch prediction is the technique that uses computer hardware to guess the outcome with the conditions. It is the digital circuit that tries to guess which way a branch will go before. Also two-way branching is usually implemented with a conditional jump instruction.
+6.	What is meant by the term informational entropy? (this may require further research)
+Answer: information entropy is the random variable quantifies the average level of uncertainty of information associated with the variable’s potential states or possible outcome.
+7.	Speaker suggests the following algorithm:
+o	make_heap()
+o	unguarded_insertion_sort()
+He suggests that by doing make_heap() first, you can do something called unguarded_insertion_sort(). Please explain what unguarded_insertion_sort() is and why it is faster than regular insertion sort. How does performing make_heap() allow you to do this?
+Answer: 9% implementing comparison a whole of 20% less in swaps, less data work,
+8.	The speaker talks about incorporating your conditionals into your arithmetic. What does this mean? Provide an example from the video and explain how the conditional is avoided.
+Answer: debate every penny like the lawyer of an insurance company, fight for every cycle in the inner loop. Push heap it saves all the companions in the loop.
+9.	The speaker talks about a bug in gnu's implementation. Describe the circumstances of this bug.
+Answer: it is a small amount of time, and it takes lot of time. It breaks out of the loop and it breaks early at the parent loop. It does extra work for everybody.
+10.	The speaker shows several graphs about what happens as the threshold increases using his new algorithm. The metric of comparison is increased, and the metric of moves is increased, but time drops... What metric does the author think is missing? Describe the missing metric he speaks about in the video. What is the metric measuring?
+Answer: collect D(n), average distance between two subsequent array accesses. The metric measuring is it compares, swaps, and the average distance between two array axises.
+11.	What does the speaker mean by fast code is left-leaning?
+Answer: go to the left of the page, the fastest code is not swap, but it is the code goes to the left, it gets few conditions, fewer jumps, more straight forward.
+12.	What does the speaker mean by not mixing hot and cold code?
+Answer: it makes the program more efficient and faster. If mixing the hot and cold code, it could slow down the performance.
+
+
+
+Part B: Reflection
+This part must be individually done.
+1.	What did you/your team find most challenging to understand in the video?
+Answer: understand the new concept and need to do some more research regarding the topic. Because it is new knowledge.
+2.	What is the most surprising thing you learned that you did not know before?\
+Answer: not mixing hot and cold code together, and it will slow down the program performance. It also helping the CPU more focus on the fast paths.
+3.	Has the video given you ideas on how you can write better/faster code? If yes, explain what you plan to change when writing code in the future. If not, explain why not.
+Answer: yes, do not do extra work when we code, because it could slow down the CPU, and it takes more time to run the code.
